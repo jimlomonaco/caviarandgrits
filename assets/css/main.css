@@ -779,6 +779,7 @@ button,
 
 /* Header */
 #header h1 {
+  font-family: "Fredericka the Great", "Roboto", sans-serif;
   font-size: 3.25em;
   margin: 0 0 0.55em 0; }
 
