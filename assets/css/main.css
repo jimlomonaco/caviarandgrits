@@ -894,6 +894,8 @@ button,
       position: relative; } }
 #buttons {
   margin: 1em auto;
+  padding: 1em;
+  font-size: 1em;
 }
 #buttons .button{
   background-color: #699e96;
@@ -902,7 +904,7 @@ button,
   color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 500;
   height: 2.75em;
   line-height: 2.75em;
   padding: 0 1.125em;
