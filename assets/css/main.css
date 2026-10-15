@@ -782,7 +782,6 @@ button,
   font-family: "Shrikhand", "Roboto", sans-serif;
   font-size: 3.25em;
   margin: 0 0 0.55em 0;
-  color: lightpink;
 }
 
 #header p {
@@ -903,10 +902,10 @@ button,
   padding:0;
 }
 #buttons .button{
-  background-color: #699e96;
+  background-color: #636363;
   border-radius: 4px;
   border: 0;
-  color: #ffffff !important;
+  color: #d8d8d8 !important;
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
@@ -920,8 +919,8 @@ button,
   margin:0 .25em;
 }
 #buttons .button:hover {
-  background-color: #c5e2dd;
+  background-color: #bfbfbf;
 }
 #buttons .button:active {
-  background-color: #699e96;
+  background-color: #636363;
 }
