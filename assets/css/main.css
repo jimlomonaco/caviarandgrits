@@ -781,7 +781,9 @@ button,
 #header h1 {
   font-family: "Shrikhand", "Roboto", sans-serif;
   font-size: 3.25em;
-  margin: 0 0 0.55em 0; }
+  margin: 0 0 0.55em 0;
+  color: lightpink;
+}
 
 #header p {
   font-size: 1.35em;
@@ -914,8 +916,12 @@ button,
   padding: 0 0.5em;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin:0 .25em;
+}
 #buttons .button:hover {
-  background-color: #c5e2dd; }
+  background-color: #c5e2dd;
+}
 #buttons .button:active {
-  background-color: #699e96; }
+  background-color: #699e96;
+}
