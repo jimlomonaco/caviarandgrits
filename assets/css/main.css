@@ -234,7 +234,8 @@ body, input, select, textarea {
   font-size: 16pt;
   font-weight: 400;
   letter-spacing: -0.01em;
-  line-height: 1.65em; }
+  line-height: 1.65em;
+  text-align: center;}
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
       font-size: 12pt; } }
@@ -445,7 +446,7 @@ ul.icons {
 
 /* Form */
 form {
-  margin: 0 0 2em 0; }
+  margin: 2em auto; }
   form .message {
     text-decoration: none;
     -moz-transition: opacity 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
