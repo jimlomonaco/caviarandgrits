@@ -895,7 +895,7 @@ button,
 #buttons {
   margin: 1em auto;
   padding: 1em;
-  font-size: 1em;
+
 }
 #buttons .button{
   background-color: #699e96;
@@ -905,8 +905,9 @@ button,
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  height: 2.75em;
-  line-height: 2.75em;
+  height: 1.25em;
+  font-size: 1em;
+  line-height: 1.25em;
   padding: 0 1.125em;
   text-align: center;
   text-decoration: none;
