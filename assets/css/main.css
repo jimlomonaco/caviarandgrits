@@ -892,3 +892,22 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+
+#buttons .button{
+  background-color: #699e96;
+  border-radius: 4px;
+  border: 0;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  height: 2.75em;
+  line-height: 2.75em;
+  padding: 0 1.125em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; }
+#buttons .button:hover {
+  background-color: #c5e2dd; }
+#buttons .button:active {
+  background-color: #699e96; }
