@@ -886,3 +886,16 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+
+/* see if this helps control the header images */
+#bg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 36, 44, 1); /* Tint color and opacity */
+  z-index: 1;
+}
