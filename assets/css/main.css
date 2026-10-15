@@ -897,6 +897,9 @@ button,
   padding: 1em;
 
 }
+#buttons ul{
+  padding:0;
+}
 #buttons .button{
   background-color: #699e96;
   border-radius: 4px;
