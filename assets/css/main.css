@@ -892,7 +892,9 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
-
+#buttons {
+  margin: 1em auto;
+}
 #buttons .button{
   background-color: #699e96;
   border-radius: 4px;
