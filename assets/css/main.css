@@ -779,7 +779,7 @@ button,
 
 /* Header */
 #header h1 {
-  font-family: "Shrikhand", "Roboto", sans-serif;
+  font-family: "Lakki Reddy", "Roboto", sans-serif;
   font-size: 3.25em;
   margin: 0 0 0.55em 0;
 }
@@ -887,10 +887,11 @@ button,
       bottom: 1.25em;
       left: 50%;
       transform: translate(-50%, -50%); } }
-  @media screen and (max-height: 640px) {
+  @media screen and (max-height: 740px) {
     #footer {
-      bottom: auto;
-      left: auto;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
       margin: 1em 0 0 0;
       position: relative; } }
 #buttons {
