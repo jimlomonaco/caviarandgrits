@@ -1,10 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-/*
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great&:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lakki+Reddy:400,700");
+@import url("https://fonts.googleapis.com/css?family=Shrikhand:400,700");
+
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -19,7 +20,6 @@ section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
 
@@ -36,7 +36,6 @@ ol, ul {
 blockquote, q {
   quotes: none; }
   blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
     content: none; }
 
 table {
@@ -57,12 +56,9 @@ input::-moz-focus-inner {
 input, select, textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
-  -ms-appearance: none;
   appearance: none; }
 
 /* Basic */
-@-ms-viewport {
-  width: device-width; }
 
 body {
   -ms-overflow-style: scrollbar; }
@@ -87,28 +83,19 @@ html, body {
       min-height: 100%; } }
 
 body {
-  display: -moz-flex;
   display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
-  -moz-flex-direction: column;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -moz-justify-content: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
   justify-content: center;
   background-color: #000;
   padding: 6em 4em 4em 4em; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
-    -ms-animation: none !important;
     animation: none !important;
-    -moz-transition: none !important;
     -webkit-transition: none !important;
-    -ms-transition: none !important;
     transition: none !important; }
   body > * {
     position: relative;
@@ -125,9 +112,7 @@ body {
 
 /* BG */
 #bg {
-  -moz-transition: opacity 2s ease-in-out;
   -webkit-transition: opacity 2s ease-in-out;
-  -ms-transition: opacity 2s ease-in-out;
   transition: opacity 2s ease-in-out;
   height: 100%;
   left: 0;
@@ -137,9 +122,7 @@ body {
   width: 100%;
   z-index: 1; }
   #bg div {
-    -moz-transition: opacity 3s ease;
     -webkit-transition: opacity 3s ease;
-    -ms-transition: opacity 3s ease;
     transition: opacity 3s ease;
     background-size: cover;
     height: 100%;
@@ -152,7 +135,6 @@ body {
     #bg div.visible {
       -moz-animation: bg 45s linear infinite;
       -webkit-animation: bg 45s linear infinite;
-      -ms-animation: bg 45s linear infinite;
       animation: bg 45s linear infinite;
       opacity: 1;
       visibility: visible;
@@ -163,18 +145,15 @@ body {
         #bg div.visible {
           -moz-animation: bg 29.25s linear infinite;
           -webkit-animation: bg 29.25s linear infinite;
-          -ms-animation: bg 29.25s linear infinite;
           animation: bg 29.25s linear infinite; } }
       @media screen and (max-width: 736px) {
         #bg div.visible {
           -moz-animation: bg 18s linear infinite;
           -webkit-animation: bg 18s linear infinite;
-          -ms-animation: bg 18s linear infinite;
           animation: bg 18s linear infinite; } }
     #bg div:only-child {
       -moz-animation-direction: alternate !important;
       -webkit-animation-direction: alternate !important;
-      -ms-animation-direction: alternate !important;
       animation-direction: alternate !important; }
   body.is-preload #bg {
     opacity: 0; }
@@ -253,9 +232,7 @@ body, input, select, textarea {
       font-size: 12pt; } }
 
 a {
-  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
   transition: border-bottom-color 0.2s ease, color 0.2s ease;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
   color: #1cb495;
@@ -403,7 +380,7 @@ header h6 + p {
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Free', sans-serif;
     font-weight: 400; }
   .icon > .label {
     display: none; }
@@ -412,7 +389,7 @@ header h6 + p {
   .icon.solid:before {
     font-weight: 900; }
   .icon.brands:before {
-    font-family: 'Font Awesome 5 Brands'; }
+    font-family: 'Font Awesome 5 Brands', sans-serif; }
 
 /* List */
 ol {
@@ -449,9 +426,7 @@ form {
   margin: 2em auto; }
   form .message {
     text-decoration: none;
-    -moz-transition: opacity 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-    -ms-transition: opacity 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -469,7 +444,7 @@ form {
       text-rendering: auto;
       line-height: 1;
       text-transform: none !important;
-      font-family: 'Font Awesome 5 Free';
+      font-family: 'Font Awesome 5 Free', sans-serif;
       font-weight: 900; }
     form .message:before {
       margin-right: 0.5em; }
@@ -570,19 +545,15 @@ select,
 textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
-  -ms-appearance: none;
   appearance: none;
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -moz-transition: border-color 0.2s ease, background-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease, background-color 0.2s ease;
-  -ms-transition: border-color 0.2s ease, background-color 0.2s ease;
   transition: border-color 0.2s ease, background-color 0.2s ease;
   background-color: transparent;
   border-radius: 6px;
-  border: none;
   border: solid 2px rgba(255, 255, 255, 0.35);
   color: inherit;
   display: block;
@@ -603,7 +574,6 @@ textarea {
   textarea:focus {
     -moz-animation: focus 0.1s;
     -webkit-animation: focus 0.1s;
-    -ms-animation: focus 0.1s;
     animation: focus 0.1s;
     background-color: rgba(255, 255, 255, 0.125);
     border-color: #1cb495; }
@@ -637,7 +607,6 @@ input[type="checkbox"],
 input[type="radio"] {
   -moz-appearance: none;
   -webkit-appearance: none;
-  -ms-appearance: none;
   appearance: none;
   display: block;
   float: left;
@@ -666,7 +635,7 @@ input[type="radio"] {
       text-rendering: auto;
       line-height: 1;
       text-transform: none !important;
-      font-family: 'Font Awesome 5 Free';
+      font-family: 'Font Awesome 5 Free', sans-serif;
       font-weight: 900; }
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {
@@ -728,11 +697,8 @@ button,
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
-  -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   background-color: #1cb495;
   border-radius: 6px;
@@ -803,9 +769,7 @@ button,
 
 /* Signup Form */
 #signup-form {
-  display: -moz-flex;
   display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   position: relative; }
   #signup-form input[type="text"],
@@ -818,9 +782,7 @@ button,
     margin: 0 0 0 0; }
   @media screen and (max-width: 480px) {
     #signup-form {
-      -moz-flex-direction: column;
       -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column; }
       #signup-form input[type="type"],
       #signup-form input[type="password"],
@@ -839,9 +801,7 @@ button,
 
 /* Footer */
 #footer {
-  -moz-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 
   color: rgba(255, 255, 255, 0.5);
