@@ -1,5 +1,3 @@
-AddType image/svg+xml .svg
-AddType image/svg+xml .svgz
-AddEncoding gzip .svgz
+
 
 Redirect 301 the-c-g-spot https://caviarandgrits.bandcamp.com/album/the-c-g-spot
